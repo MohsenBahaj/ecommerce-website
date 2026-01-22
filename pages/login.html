@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - ShopHub</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar"></nav>
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <h1 class="auth-title">Welcome Back</h1>
+      
+      <form class="auth-form" id="loginForm">
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            class="form-input" 
+            placeholder="haythem@example.com"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">Password</label>
+          <input 
+            type="password" 
+            id="password" 
+            class="form-input" 
+            placeholder="Enter your password"
+            required
+          >
+        </div>
+
+        <div id="errorMessage" class="form-error" style="display: none;"></div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          Login
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="../js/pages/login.js"></script>
+</body>
+</html>

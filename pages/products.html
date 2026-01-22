@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products - ShopHub</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar"></nav>
+
+  <main class="page">
+    <div class="container">
+      <div class="page-header">
+        <h1 class="page-title">All Products</h1>
+        <p class="page-subtitle">Discover our complete collection</p>
+      </div>
+
+      <div class="products-grid-layout">
+        <!-- Filters Sidebar -->
+        <aside class="filter-sidebar">
+          <div class="filter-section">
+            <h3 class="filter-title">Category</h3>
+            <div id="categoryFilters">
+              <a href="#" class="filter-option active" data-category="">All Categories</a>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h3 class="filter-title">Price Range</h3>
+            <div class="price-inputs">
+              <input 
+                type="number" 
+                id="minPrice" 
+                class="form-input" 
+                placeholder="Min"
+                min="0"
+              >
+              <span>-</span>
+              <input 
+                type="number" 
+                id="maxPrice" 
+                class="form-input" 
+                placeholder="Max"
+                min="0"
+              >
+            </div>
+            <button class="btn btn-secondary btn-sm" id="applyPriceFilter" style="width: 100%; margin-top: var(--spacing-md);">
+              Apply
+            </button>
+          </div>
+
+          <button class="btn btn-ghost btn-sm" id="clearFilters" style="width: 100%;">
+            Clear All Filters
+          </button>
+        </aside>
+
+        <!-- Products Grid -->
+        <div>
+          <div class="products-header">
+            <p class="products-count" id="productsCount">Loading...</p>
+            <select class="sort-select" id="sortSelect">
+              <option value="">Sort by</option>
+              <option value="name">Name</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Rating</option>
+            </select>
+          </div>
+
+          <div class="grid grid-4" id="productsGrid">
+            <!-- Products will be injected -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="../js/pages/products.js"></script>
+</body>
+</html>

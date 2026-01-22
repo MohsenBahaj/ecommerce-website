@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopHub - Your Premium E-Commerce Destination</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <!-- Navbar will be injected by JavaScript -->
+  </nav>
+
+  <!-- Main Content -->
+  <main class="page">
+    <div class="container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Discover Amazing Products</h1>
+          <p class="hero-subtitle">Shop the latest electronics, fashion, and more with unbeatable prices</p>
+          <div class="hero-search">
+            <input type="text" class="hero-search-input" id="heroSearchInput" placeholder="Search for products...">
+            <button class="btn btn-primary btn-lg" id="heroSearchBtn">Search</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Featured Products</h2>
+          <a href="pages/products.html" class="section-link">View All →</a>
+        </div>
+        <div class="grid grid-4" id="featuredProducts">
+          <!-- Products will be injected by JavaScript -->
+        </div>
+      </section>
+
+      <!-- New Arrivals -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">New Arrivals</h2>
+          <a href="pages/products.html" class="section-link">View All →</a>
+        </div>
+        <div class="grid grid-4" id="newProducts">
+          <!-- Products will be injected by JavaScript -->
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section class="section">
+        <div class="section-header">
+          <h2 class="section-title">Shop by Category</h2>
+        </div>
+        <div class="grid grid-3" id="categoriesGrid">
+          <!-- Categories will be injected by JavaScript -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script type="module" src="js/pages/home.js"></script>
+</body>
+</html>
