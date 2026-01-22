@@ -7,11 +7,13 @@ A large-scale static e-commerce website built with vanilla **HTML**, **CSS**, an
 ## 🚀 Features
 
 ### Data & Content
+
 - **12 Product Categories**: Electronics, Mobile Phones, Laptops, Home Appliances, Fashion, Shoes, Accessories, Books, Gaming, Sports, Beauty, and Grocery
 - **80 Products**: Each with real images from Unsplash, detailed descriptions, ratings, pricing, and stock information
 - **Real Images**: All product and category images are from Unsplash/Pexels
 
 ### Pages
+
 1. **Home** - Hero section, featured products, new arrivals, category showcase
 2. **Products** - All products with filtering and sorting
 3. **Category** - Category-specific product listing
@@ -27,6 +29,7 @@ A large-scale static e-commerce website built with vanilla **HTML**, **CSS**, an
 13. **404** - Error page
 
 ### Functionality
+
 - ✅ **Authentication**: Login with hardcoded credentials
 - ✅ **Search & Filter**: Live search, category filter, price range filter
 - ✅ **Shopping Cart**: Add, update quantity, remove items
@@ -35,6 +38,7 @@ A large-scale static e-commerce website built with vanilla **HTML**, **CSS**, an
 - ✅ **LocalStorage**: All data persists in browser
 
 ### Order Management Rules
+
 - **PENDING** → Can cancel
 - **SHIPPED** → No actions available
 - **DELIVERED** → Can return
@@ -53,7 +57,7 @@ A large-scale static e-commerce website built with vanilla **HTML**, **CSS**, an
 ## 📁 Project Structure
 
 ```
-haythm/
+mohsen/
 ├── index.html                      # Home page
 ├── css/
 │   ├── global.css                  # Design system & variables
@@ -107,6 +111,7 @@ haythm/
 2. That's it! No installation, no dependencies, no build process
 
 **Recommended**: Use a local web server for best results:
+
 ```bash
 # Using Python
 python -m http.server 8000
@@ -120,6 +125,7 @@ Then open `http://localhost:8000` in your browser.
 ## 💾 Data Storage
 
 All data is stored in **localStorage**:
+
 - `ecommerce_session` - User session
 - `ecommerce_cart` - Shopping cart
 - `ecommerce_orders` - Order history
@@ -128,17 +134,20 @@ All data is stored in **localStorage**:
 ## 🎯 Key Implementation Details
 
 ### Clean Code Structure
+
 - **Separation of concerns**: Data, logic, and UI are clearly separated
 - **Service layer**: Business logic in dedicated service modules
 - **Reusable components**: Navbar and product cards are modular
 - **Utility functions**: Common functions in helper modules
 
 ### No Inline JavaScript
+
 - All JavaScript in separate `.js` files
 - Module-based architecture using ES6 modules
 - Event listeners attached programmatically
 
 ### Modern CSS
+
 - CSS custom properties (variables)
 - CSS Grid and Flexbox
 - Mobile-first responsive design
